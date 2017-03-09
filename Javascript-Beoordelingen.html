@@ -44,8 +44,20 @@
     
     
      function cijfers1() {
-       var resultaatCijfers1 = document.getElementById("resultaten").value;
-        document.getElementById("resultaat").innerHTML += resultaatCijfers;
+       var resultaatCijfers1 = document.getElementById("resultaten1").value;
+         if (resultaatCijfers1  < 50 ) {
+             document.getElementById("resultaat").innerHTML += "De beoordeling is onvoldoende, want het cijfer is " + resultaatCijfers1 + "<br>" ;
+       }
+        
+         else if (resultaatCijfers1 < 60){
+         document.getElementById("resultaat").innerHTML += "De beoordeling is matig, want het cijfer is  " + resultaatCijfers1 + "<br>" ;
+       }
+         else if (resultaatCijfers1 < 75){
+         document.getElementById("resultaat").innerHTML += "De beoordeling is voldoende, want het cijfer is  "+resultaatCijfers1 + "<br>" ;
+       }
+         else if (resultaatCijfers1 < 101){
+         document.getElementById("resultaat").innerHTML += "De beoordeling is goed, want het cijfer is  " + resultaatCijfers1 + "<br>";
+       }
    } 	
 </script>
 
