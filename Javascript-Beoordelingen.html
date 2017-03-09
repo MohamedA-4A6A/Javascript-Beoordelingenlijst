@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="content-type"
+          content="text/html;
+          charset=UTF-8">
+    <title>  </title>
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    
+    <input id="resultaten" type="number" min="0" max="100" value="1">
+    
+    <button onclick="cijfers()">Cijfers</button>
+   
+     
+    <input id="resultaten1" type="number" min="0" max="100" value="1">
+    
+    <button onclick="cijfers1()">Cijfers</button><br>
+   
+    <div id="resultaat"><h3>Cijfer Beoordeling</h3>  </div> <br>
+
+<script>
+   function cijfers() {
+       var resultaatCijfers = document.getElementById("resultaten").value;
+       if (resultaatCijfers  < 50 ) {document.getElementById("resultaat").innerHTML += resultaatCijfers + " is onvoldoende <br>";
+        
+           
+       }
+       else if (resultaatCijfers < 60){
+           document.getElementById("resultaat").innerHTML += resultaatCijfers + " is matig <br>";
+       }
+        else if (resultaatCijfers < 75){
+           document.getElementById("resultaat").innerHTML +=  resultaatCijfers + " is voldoende <br>";
+       }
+        else if (resultaatCijfers < 101){
+           document.getElementById("resultaat").innerHTML +=  resultaatCijfers + " is goed <br>";
+       }
+       
+   } 	
+    
+    
+     function cijfers1() {
+       var resultaatCijfers1 = document.getElementById("resultaten").value;
+        document.getElementById("resultaat").innerHTML += resultaatCijfers;
+   } 	
+</script>
+
+ </body>
+ 
+</html>
